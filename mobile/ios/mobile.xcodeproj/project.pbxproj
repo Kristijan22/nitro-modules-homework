@@ -25,10 +25,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = mobile/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-
-		AA0000060000000000000001 /* RCTCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCustomButton.h; sourceTree = "<group>"; };
 		AA0000040000000000000001 /* RCTCustomButton.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTCustomButton.mm; sourceTree = "<group>"; };
+		AA0000060000000000000001 /* RCTCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCustomButton.h; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,16 +53,6 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = mobile;
-			sourceTree = "<group>";
-		};
-		AA0000080000000000000001 /* CustomButton */ = {
-			isa = PBXGroup;
-			children = (
-				AA0000060000000000000001 /* RCTCustomButton.h */,
-				AA0000040000000000000001 /* RCTCustomButton.mm */,
-			);
-			name = CustomButton;
-			path = mobile/CustomButton;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -102,6 +91,16 @@
 				13B07F961A680F5B00A75B9A /* mobile.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000080000000000000001 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000060000000000000001 /* RCTCustomButton.h */,
+				AA0000040000000000000001 /* RCTCustomButton.mm */,
+			);
+			name = CustomButton;
+			path = mobile/CustomButton;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
