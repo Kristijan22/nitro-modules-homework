@@ -1,0 +1,27 @@
+{
+  "name": "nitro-notification",
+  "version": "0.0.1",
+  "description": "A Nitro Module for showing native notifications",
+  "main": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "ios",
+    "android",
+    "nitrogen",
+    "NitroNotification.podspec",
+    "nitro.json"
+  ],
+  "scripts": {
+    "specs": "nitrogen"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-nitro-modules": "*"
+  },
+  "devDependencies": {
+    "nitrogen": "^0.35.0",
+    "react-native-nitro-modules": "^0.35.0"
+  }
+}

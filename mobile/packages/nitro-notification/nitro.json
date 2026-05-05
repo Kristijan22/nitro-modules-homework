@@ -1,0 +1,24 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": ["notification"],
+  "ios": {
+    "iosModuleName": "NitroNotification"
+  },
+  "android": {
+    "androidNamespace": ["notification"],
+    "androidCxxLibName": "NitroNotification"
+  },
+  "autolinking": {
+    "Notification": {
+      "ios": {
+        "language": "swift",
+        "implementationClassName": "HybridNotification"
+      },
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "HybridNotification"
+      }
+    }
+  },
+  "ignorePaths": ["**/node_modules"]
+}
