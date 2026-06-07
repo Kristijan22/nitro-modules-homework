@@ -1,10 +1,11 @@
 import { REACT_APP_API_URL } from '@env';
 import { useMutation } from '@tanstack/react-query';
+import { NotificationModule } from 'nitro-notification';
 
 export const useNewLottery = () => {
   return useMutation({
-    mutationFn: ({ name, prize }: { name: string; prize: string }) =>
-      fetch(`${REACT_APP_API_URL}/lotteries`, {
+    mutationFn: async ({ name, prize }: { name: string; prize: string }) => {
+      const response = await fetch(`${REACT_APP_API_URL}/lotteries`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -14,6 +15,14 @@ export const useNewLottery = () => {
           name,
           prize,
         }),
-      }),
+      });
+
+      NotificationModule.showNotification(
+        'Lottery Created',
+        'Your new lottery has been added successfully!',
+      );
+
+      return response;
+    },
   });
 };
